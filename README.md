@@ -1,63 +1,63 @@
-# AICH — Hibrid Transformer-Mamba Architektúra Latent Reasoning Space-szel
+# AICH — Hybrid Transformer-Mamba Architecture with Latent Reasoning Space
 
-**Egy 15-30M paraméteres, lokálisan tanítható hibrid nyelvi modell, amely Transformer figyelmi rétegeket és Mamba (SSM) rétegeket kombinál, kiegészítve egy belső gondolkodási térrel (Latent Reasoning Space).**
+**A 15–30M parameter, locally trainable hybrid language model that combines Transformer attention layers with Mamba (SSM) layers, augmented with an internal Latent Reasoning Space.**
 
-## 🧠 Leírás
+## 🧠 Description
 
-Az AICH egy kompakt, mégis erőteljes nyelvi modell architektúra, amely:
+AICH is a compact yet powerful language model architecture that features:
 
-- **Hibrid felépítés:** 2 Transformer attention réteg + 4 Mamba/SSM réteg
-- **Latent Reasoning Space:** Belső gondolkodási nyelv (QTL — Quantum Thought Language), amely lehetővé teszi a modell számára, hogy tokenek előtt "gondolkodjon"
-- **~15-30M paraméter** — lokális GPU-n (akár CPU-n is) tanítható
-- **Ontologikus motor:** Strukturált tudásreprezentáció és következtetés
-- **Magyar és angol nyelvű korpusz** támogatás
+- **Hybrid design:** 2 Transformer attention layers + 4 Mamba/SSM layers
+- **Latent Reasoning Space:** An internal reasoning language (QTL — Quantum Thought Language) that allows the model to "think" before producing tokens
+- **~15–30M parameters** — trainable on a local GPU (or even CPU)
+- **Ontological engine:** Structured knowledge representation and inference
+- **Hungarian and English corpus** support
 
-### Fő komponensek
+### Core Components
 
-| Komponens | Leírás |
-|-----------|--------|
-| `model.py` | Transformer-Mamba hibrid modell architektúra |
-| `layers.py` | Egyedi rétegek (SSM, attention, FFN) |
-| `latent_reasoning_space.py` | Belső gondolkodási tér implementáció |
+| Component | Description |
+|-----------|-------------|
+| `model.py` | Transformer-Mamba hybrid model architecture |
+| `layers.py` | Custom layers (SSM, attention, FFN) |
+| `latent_reasoning_space.py` | Internal reasoning space implementation |
 | `qtl_reasoning_space.py` | QTL — Quantum Thought Language |
-| `qtl_tokenizer.py` | QTL tokenizáló |
-| `concept_compressor.py` | Fogalom tömörítés a gondolkodási térbe |
-| `ontological_engine.py` | Ontologikus következtető motor |
-| `linguistic_resonator.py` | Nyelvi rezonancia elemző |
-| `autonomous_trainer.py` | Autonóm tanító loop |
-| `ultra_trainer.py` | Optimalizált tréner |
-| `evolution_cycle.py` | Evolúciós ciklus menedzser |
-| `config.py` | Modell konfiguráció |
+| `qtl_tokenizer.py` | QTL tokenizer |
+| `concept_compressor.py` | Concept compression into the reasoning space |
+| `ontological_engine.py` | Ontological inference engine |
+| `linguistic_resonator.py` | Linguistic resonance analyzer |
+| `autonomous_trainer.py` | Autonomous training loop |
+| `ultra_trainer.py` | Optimized trainer |
+| `evolution_cycle.py` | Evolution cycle manager |
+| `config.py` | Model configuration |
 
-## 📁 Fájlszerkezet
+## 📁 File Structure
 
 ```
 AICH/
-├── config.py                    # Modell konfiguráció (~15-30M param)
-├── model.py                     # Hibrid Transformer-Mamba modell
-├── layers.py                    # Egyedi rétegek
-├── tokenizer.py                 # Tokenizáló
-├── latent_reasoning_space.py    # Latens gondolkodási tér
-├── qtl_reasoning_space.py       # QTL implementáció
-├── qtl_tokenizer.py             # QTL tokenizáló
-├── concept_compressor.py        # Fogalom tömörítő
-├── ontological_engine.py        # Ontologikus motor
-├── linguistic_resonator.py      # Nyelvi rezonátor
-├── autonomous_trainer.py        # Autonóm tréner
-├── ultra_trainer.py             # Optimalizált tréner
-├── evolution_cycle.py           # Evolúciós ciklus
-├── optimizer_cycle.py           # Optimalizáló ciklus
-├── live_world_trainer.py        # Élő világ tréner
-├── synthetic_data.py            # Szintetikus adat generátor
-├── b2_hungarian_corpus.py       # Magyar korpusz (B2 szint)
-├── expanded_hungarian_corpus.py # Bővített magyar korpusz
-├── logic_instruction_corpus.py  # Logikai instrukciós korpusz
-├── logic_tester.py              # Logikai tesztelő
-├── chat_interface.py            # Chat interfész
-├── final_interface.py           # Végső felhasználói interfész
-├── test_lrs.py                  # LRS teszt
+├── config.py                    # Model configuration (~15–30M params)
+├── model.py                     # Hybrid Transformer-Mamba model
+├── layers.py                    # Custom layers
+├── tokenizer.py                 # Tokenizer
+├── latent_reasoning_space.py    # Latent reasoning space
+├── qtl_reasoning_space.py       # QTL implementation
+├── qtl_tokenizer.py             # QTL tokenizer
+├── concept_compressor.py        # Concept compressor
+├── ontological_engine.py        # Ontological engine
+├── linguistic_resonator.py      # Linguistic resonator
+├── autonomous_trainer.py        # Autonomous trainer
+├── ultra_trainer.py             # Optimized trainer
+├── evolution_cycle.py           # Evolution cycle
+├── optimizer_cycle.py           # Optimizer cycle
+├── live_world_trainer.py        # Live world trainer
+├── synthetic_data.py            # Synthetic data generator
+├── b2_hungarian_corpus.py       # Hungarian corpus (B2 level)
+├── expanded_hungarian_corpus.py # Expanded Hungarian corpus
+├── logic_instruction_corpus.py  # Logic instruction corpus
+├── logic_tester.py              # Logic tester
+├── chat_interface.py            # Chat interface
+├── final_interface.py           # Final user interface
+├── test_lrs.py                  # LRS test
 ├── qtl_benchmark.py             # QTL benchmark
-└── deprecated_tests/            # Korábbi tesztek
+└── deprecated_tests/            # Previous tests
     ├── benchmark.py
     ├── bbh_test.py
     ├── bbh_validator.py
@@ -69,27 +69,27 @@ AICH/
     └── stress_test.py
 ```
 
-## 🚀 Használat
+## 🚀 Usage
 
-### Modell betöltése és chat
+### Load model and chat
 
 ```bash
 python chat_interface.py
 ```
 
-### Végső interfész
+### Final interface
 
 ```bash
 python final_interface.py
 ```
 
-### Tanítás
+### Training
 
 ```bash
 python autonomous_trainer.py
 ```
 
-### Tesztelés
+### Testing
 
 ```bash
 python test_lrs.py
@@ -97,16 +97,16 @@ python qtl_benchmark.py
 python logic_tester.py
 ```
 
-### Konfiguráció módosítása
+### Modifying configuration
 
-A `config.py` fájlban állítható:
-- `d_model` — modell dimenzió (alap: 256)
-- `n_layers` — rétegek száma (alap: 6)
-- `n_mamba_layers` — Mamba rétegek (alap: 4)
-- `n_attention_layers` — Attention rétegek (alap: 2)
-- `vocab_size` — szótár méret (alap: 16384)
+The following can be set in `config.py`:
+- `d_model` — model dimension (default: 256)
+- `n_layers` — number of layers (default: 6)
+- `n_mamba_layers` — Mamba layers (default: 4)
+- `n_attention_layers` — Attention layers (default: 2)
+- `vocab_size` — vocabulary size (default: 16384)
 
-## 📦 Függőségek
+## 📦 Dependencies
 
 ```bash
 pip install torch numpy transformers tokenizers
@@ -116,9 +116,12 @@ pip install torch numpy transformers tokenizers
 - **Transformers** (HuggingFace)
 - **tokenizers** (HuggingFace)
 
-## 🎯 Célok
+## 🎯 Goals
 
-- Kompakt, lokálisan futtatható nyelvi modell
-- Magyar és angol nyelv támogatása
-- Belső gondolkodási térrel jobb következtetési képesség
-- Kutatási platform új architektúrák tesztelésére
+- Compact, locally executable language model
+- Hungarian and English language support
+- Improved reasoning capability via internal reasoning space
+- Research platform for testing new architectures
+
+## Author
+Zsombi & Hermes Agent (Nous Research)
