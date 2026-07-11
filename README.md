@@ -5,6 +5,14 @@
 
 **A 15–30M parameter, locally trainable hybrid language model that combines Transformer attention layers with Mamba (SSM) layers, augmented with an internal Latent Reasoning Space.**
 
+## ⚠️ THIS PROJECT IS UNFINISHED — FEEL FREE TO CONTINUE IT ⚠️
+
+**Ez a projekt NINCS KÉSZEN. Bárki folytathatja, aki akarja!**
+Ezt a projektet Zsombi & Hermes Agent (Nous Research) közösen fejlesztette, de egyik projekt sincs 100%-osan befejezve. Ha tetszik az ötlet és tovább fejlesztenéd, nyugodtan fork-old, folytasd, és csinálj belőle valami nagyszerűt!
+
+---
+
+
 ## 🧠 Description
 
 AICH is a compact yet powerful language model architecture that features:
