@@ -1,5 +1,8 @@
 # AICH — Hybrid Transformer-Mamba Architecture with Latent Reasoning Space
 
+**Status:** ⚠️ Prototype — architecture defined, config ready, training not executed
+
+
 **A 15–30M parameter, locally trainable hybrid language model that combines Transformer attention layers with Mamba (SSM) layers, augmented with an internal Latent Reasoning Space.**
 
 ## 🧠 Description
