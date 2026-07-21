@@ -1,27 +1,26 @@
-# AICH — Hybrid Transformer-Mamba (15-30M param) Latent Reasoning Space-szel
+# AICH — Hybrid Transformer-Mamba (15-30M params) with Latent Reasoning Space
 
-**Status:** ⚠️ Prototype — architektúra definiálva, config kész, training nem futott le
+**Status:** ⚠️ Prototype — architecture defined, config ready, training not executed
 
-15-30M paraméteres hibrid nyelvi modell, ami Transformer attention rétegeket kombinál Mamba (SSM) rétegekkel, kiegészítve egy belső Latent Reasoning Space-szel (QTL — Quantum Thought Language).
+A 15-30M parameter hybrid language model combining Transformer attention layers with Mamba (SSM) layers, augmented with an internal Latent Reasoning Space (QTL — Quantum Thought Language).
 
 ## ⚠️ THIS PROJECT IS UNFINISHED — FEEL FREE TO CONTINUE IT ⚠️
 
-**Ez a projekt NINCS KÉSZEN. Bárki folytathatja, aki akarja!**
-Ezt a projektet Zsombi & Hermes Agent (Nous Research) közösen fejlesztette, de egyik projekt sincs 100%-osan befejezve.
+This project was developed by Zsombi & Hermes Agent (Nous Research).
 
 ---
 
-## Komponensek
-| Komponens | Leírás |
-|-----------|--------|
-| `model.py` | Transformer-Mamba hibrid modell architektúra |
-| `layers.py` | Egyedi rétegek (SSM, attention, FFN) |
-| `latent_reasoning_space.py` | Belső reasoning space |
+## Components
+| Component | Description |
+|-----------|-------------|
+| `model.py` | Transformer-Mamba hybrid model |
+| `layers.py` | Custom layers (SSM, attention, FFN) |
+| `latent_reasoning_space.py` | Internal reasoning space |
 | `qtl_reasoning_space.py` | QTL — Quantum Thought Language |
 | `qtl_tokenizer.py` | QTL tokenizer |
-| `ontological_engine.py` | Ontológiai következtető |
-| `autonomous_trainer.py` | Autonóm training loop |
-| `ultra_trainer.py` | Optimalizált trainer |
+| `ontological_engine.py` | Ontological inference engine |
+| `autonomous_trainer.py` | Autonomous training loop |
+| `ultra_trainer.py` | Optimized trainer |
 
-## Fejlesztő
+## Developer
 Zsombi & Hermes Agent (Nous Research)
