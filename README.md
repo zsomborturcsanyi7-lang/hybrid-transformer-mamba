@@ -1,18 +1,18 @@
 # hybrid-transformer-mamba
 
-Hybrid Transformer-Mamba modell architektúra tesztek.
+Hybrid Transformer-Mamba architecture experiments and benchmarks.
 
-## 📌 A projekt célja
-A Transformer figyelem-mechanizmus és a Mamba állapot-tér modell (SSM) kombinációjának tesztelése.
+## 📌 Overview & Purpose
+Combines Transformer self-attention with Mamba State Space Models (SSM) for sequence modeling tasks.
 
-## ⚙️ Technológiai stakk
+## ⚙️ Tech Stack & Architecture
 - PyTorch, Python
 
-## 🚀 Telepítés és Használat
+## 🚀 Installation & Quickstart
 ```bash
 git clone https://github.com/zsomborturcsanyi7-lang/hybrid-transformer-mamba.git
 cd hybrid-transformer-mamba
 ```
 
-## 📊 Status
-⚠️ **Kísérleti kód**.
+## 📊 Project Status
+⚠️ **Experimental Code**.
