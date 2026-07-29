@@ -1,4 +1,4 @@
-# AICH — Hybrid Transformer-Mamba (15-30M params) with Latent Reasoning Space
+# hybrid-transformer-mamba
 
 **Status:** ⚠️ Prototype — architecture defined, config ready, training not executed
 
